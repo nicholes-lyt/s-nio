@@ -3,8 +3,10 @@ package com.dev.netty.http.server;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
+import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
+import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.ssl.SslContext;
 
 /**
@@ -33,7 +35,10 @@ public class HttpServerChannelInitializer extends ChannelInitializer<SocketChann
 		}
 		p.addLast(new HttpServerCodec());
 		p.addLast(new HttpObjectAggregator(2048));//HTTP 消息的合并处理
-		p.addLast(new HttpServerHandler());
+		//用netty自带包解决粘包，拆包
+		p.addLast(new LineBasedFrameDecoder(1024));
+		p.addLast(new StringDecoder());
+		p.addLast(new HttpServerHandler());//业务处理
 	}
 
 }

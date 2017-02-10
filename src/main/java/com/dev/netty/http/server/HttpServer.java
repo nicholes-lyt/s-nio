@@ -2,6 +2,7 @@ package com.dev.netty.http.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -27,9 +28,27 @@ public class HttpServer {
 	
 	private static final Logger logger = Logger.getLogger(HttpServer.class);
 	
+	
+	private EventLoopGroup bossGroup = null;
+	private EventLoopGroup workerGroup = null;
+	
 	//是否使用https协议
 	private static final boolean SSL = System.getProperty("ssl") != null;
 	private static final int PORT = Integer.parseInt(System.getProperty("port", SSL ? "8443" : "8082"));
+	
+	/**
+	 * 
+	 * @Description: 初始化线程组
+	 * @author liyut
+	 * @version 1.0 
+	 * @date 2017年2月10日 上午11:12:19  
+	 * @return void
+	 */
+	public void initEventLoopGroup(){
+		//Nio 线程组
+		bossGroup = new NioEventLoopGroup();
+		workerGroup = new NioEventLoopGroup();
+	}
 
 	public void start()throws Exception{
 		SslContext sslContext;
@@ -40,15 +59,15 @@ public class HttpServer {
 		}else{
 			sslContext = null;
 		}
-		//Nio 线程组
-		EventLoopGroup bossGroup = new NioEventLoopGroup();
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
+		initEventLoopGroup();
 		try {
 			ServerBootstrap b = new ServerBootstrap();
 			b.group(bossGroup, workerGroup)
 			.channel(NioServerSocketChannel.class)
 			.localAddress(new InetSocketAddress(PORT))
 			.handler(new LoggingHandler(LogLevel.INFO))//跟踪日志
+			.option(ChannelOption.SO_BACKLOG, 1024)
+			.option(ChannelOption.SO_KEEPALIVE, true)//设置长连接
 			.childHandler(new HttpServerChannelInitializer(sslContext));
 			//绑定端口
 			ChannelFuture f = b.bind(PORT).sync();
@@ -60,6 +79,27 @@ public class HttpServer {
 		} finally {
 			bossGroup.shutdownGracefully();
 			workerGroup.shutdownGracefully();
+		}
+	}
+	
+	/**
+	 * 
+	 * @Description: 
+	 * @author liyut
+	 * @version 1.0 
+	 * @date 2017年2月10日 上午11:08:35 
+	 * @throws Exception 
+	 * @return void
+	 */
+	public void shutdown()throws Exception{
+		initEventLoopGroup();
+		try {
+			logger.info("关闭服务成功");
+			bossGroup.shutdownGracefully();
+			workerGroup.shutdownGracefully();
+		} catch (Exception e) {
+			logger.error("关闭服务失败");
+			logger.error(e.getMessage());
 		}
 	}
 	

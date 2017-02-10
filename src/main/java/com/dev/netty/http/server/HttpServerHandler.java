@@ -54,7 +54,10 @@ public class HttpServerHandler extends ChannelInboundHandlerAdapter{
 			request = (FullHttpRequest)msg;
 			String uri = request.uri();
 			logger.info("requersURI:"+uri);
-			
+			//去除浏览器"/favicon.ico"的干扰
+			if(uri.equals("/favicon.ico")){
+				return;
+			}
 			//新建一个返回消息的Json对象
 			JSONObject responseJson = new JSONObject();
 			//把客户端的请求数据格式化为Json对象
