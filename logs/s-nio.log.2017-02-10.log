@@ -1,0 +1,159 @@
+2017-02-10 16:34:42.220 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 16:34:42 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:34:42.341 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 16:34:42.463 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 16:34:42.903 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 16:34:42 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:34:42.997 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 16:34:42.998 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 16:34:43.012 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 14 ms
+2017-02-10 16:34:43.486 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x6ee87b50]'
+2017-02-10 16:34:43.504 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6ee87b50] REGISTERED
+2017-02-10 16:34:43.506 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6ee87b50] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 16:34:43.507 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6ee87b50, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
+2017-02-10 16:35:15.052 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6ee87b50, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x157d619a, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:53838]
+2017-02-10 16:35:15.054 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6ee87b50, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0xd8e33bde, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:53839]
+2017-02-10 16:35:15.477 [nioEventLoopGroup-3-1] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/hello/foo] in DispatcherServlet with name ''
+2017-02-10 16:35:15.601 [nioEventLoopGroup-3-2] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name ''
+2017-02-10 16:36:52.161 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 16:36:52 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:36:52.283 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 16:36:52.407 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 16:36:52.881 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 16:36:52 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:36:52.954 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 16:36:52.954 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 16:36:52.970 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 15 ms
+2017-02-10 16:36:53.460 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x759c6b05]'
+2017-02-10 16:36:53.478 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x759c6b05] REGISTERED
+2017-02-10 16:36:53.480 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x759c6b05] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 16:36:53.482 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x759c6b05, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
+2017-02-10 16:37:31.165 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x759c6b05, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x509cfa40, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:54115]
+2017-02-10 16:37:31.167 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x759c6b05, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x3c3febac, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:54116]
+2017-02-10 16:37:31.279 [nioEventLoopGroup-3-1] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/hello/foo.htm] in DispatcherServlet with name ''
+2017-02-10 16:41:54.485 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 16:41:54 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:41:54.613 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 16:41:54.743 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 16:41:55.197 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 16:41:54 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:41:55.292 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 16:41:55.292 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 16:41:55.308 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 16 ms
+2017-02-10 16:41:55.789 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x9bfba04c]'
+2017-02-10 16:41:55.808 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9bfba04c] REGISTERED
+2017-02-10 16:41:55.810 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9bfba04c] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 16:41:55.812 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9bfba04c] CLOSE
+2017-02-10 16:41:55.813 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9bfba04c] UNREGISTERED
+2017-02-10 16:43:49.218 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x759c6b05, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x87781be7, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:54673]
+2017-02-10 16:43:49.229 [nioEventLoopGroup-3-3] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/hello/foo.htm] in DispatcherServlet with name ''
+2017-02-10 16:47:27.040 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 16:47:27 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:47:27.157 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 16:47:27.294 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 16:47:27.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 16:47:27 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:47:27.840 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 16:47:27.840 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 16:47:27.853 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 13 ms
+2017-02-10 16:47:28.332 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x26dd28c2]'
+2017-02-10 16:47:28.351 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x26dd28c2] REGISTERED
+2017-02-10 16:47:28.353 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x26dd28c2] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 16:47:28.354 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x26dd28c2, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
+2017-02-10 16:49:57.408 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 16:49:57 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:49:57.534 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 16:49:57.659 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 16:49:58.123 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 16:49:57 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 16:49:58.194 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String com.mvc.controller.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2017-02-10 16:49:58.246 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 16:49:58.246 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 16:49:58.262 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 15 ms
+2017-02-10 16:49:58.756 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x1ed158af]'
+2017-02-10 16:49:58.773 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x1ed158af] REGISTERED
+2017-02-10 16:49:58.774 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x1ed158af] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 16:49:58.776 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x1ed158af, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
+2017-02-10 16:50:10.776 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x1ed158af, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0xd74f2216, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:55614]
+2017-02-10 17:11:54.007 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 17:11:54 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:11:54.133 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 17:11:54.260 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 17:11:54.666 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/soa/service/{scode}.htm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.mvc.controller.ServiceInterfaceController.service(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-02-10 17:11:54.668 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/netty.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String com.mvc.controller.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2017-02-10 17:11:54.772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 17:11:54 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:11:54.852 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 17:11:54.853 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 17:11:54.868 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 15 ms
+2017-02-10 17:11:55.360 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xf9131d31]'
+2017-02-10 17:11:55.382 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf9131d31] REGISTERED
+2017-02-10 17:11:55.383 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf9131d31] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 17:11:55.384 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf9131d31, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
+2017-02-10 17:12:17.286 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf9131d31, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x5051dc16, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:57381]
+2017-02-10 17:12:39.215 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf9131d31, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x35fbdd16, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:57411]
+2017-02-10 17:13:23.788 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 17:13:23 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:13:23.909 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 17:13:24.029 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 17:13:24.488 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 17:13:23 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:13:24.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/soa/service/{scode}.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=UTF-8],custom=[]}" onto public void com.mvc.controller.ServiceInterfaceController.service(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-02-10 17:13:24.587 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/netty.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String com.mvc.controller.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2017-02-10 17:13:24.607 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 17:13:24.607 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 17:13:24.622 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 15 ms
+2017-02-10 17:13:25.108 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xf2b3c856]'
+2017-02-10 17:13:25.128 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf2b3c856] REGISTERED
+2017-02-10 17:13:25.130 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf2b3c856] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 17:13:25.132 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf2b3c856, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
+2017-02-10 17:13:30.481 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf2b3c856, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x132631ee, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:57529]
+2017-02-10 17:13:39.273 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf2b3c856, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x3ba279d4, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:57530]
+2017-02-10 17:16:40.366 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 17:16:40 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:16:40.487 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 17:16:40.615 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 17:16:41.080 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 17:16:40 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:16:41.170 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/soa/service/{scode}.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public void com.mvc.controller.ServiceInterfaceController.service(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-02-10 17:16:41.172 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/netty.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String com.mvc.controller.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2017-02-10 17:16:41.200 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 17:16:41.201 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 17:16:41.217 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 16 ms
+2017-02-10 17:16:41.711 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x04e56946]'
+2017-02-10 17:16:41.729 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x04e56946] REGISTERED
+2017-02-10 17:16:41.731 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x04e56946] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 17:16:41.733 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x04e56946, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
+2017-02-10 17:16:47.348 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x04e56946, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x6b85d76c, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:57839]
+2017-02-10 17:17:47.660 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 17:17:47 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:17:47.785 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 17:17:47.917 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 17:17:48.392 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 17:17:47 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:17:48.446 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/soa/service/{scode}.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public void com.mvc.controller.ServiceInterfaceController.service(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-02-10 17:17:48.447 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/netty.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String com.mvc.controller.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2017-02-10 17:17:48.495 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 17:17:48.495 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 17:17:48.510 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 15 ms
+2017-02-10 17:17:49.003 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xf83ee8ba]'
+2017-02-10 17:17:49.020 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf83ee8ba] REGISTERED
+2017-02-10 17:17:49.022 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf83ee8ba] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 17:17:49.024 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf83ee8ba, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
+2017-02-10 17:17:58.177 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf83ee8ba, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x24169ba0, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:58027]
+2017-02-10 17:18:42.823 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf83ee8ba, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x3903702b, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:58100]
+2017-02-10 17:19:11.828 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf83ee8ba, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x72570fba, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:58129]
+2017-02-10 17:19:11.829 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf83ee8ba, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x063b12e1, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:58130]
+2017-02-10 17:19:41.929 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf83ee8ba, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0xcc403223, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:58180]
+2017-02-10 17:20:10.743 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 17:20:10 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:20:10.866 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 17:20:10.995 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 17:20:11.498 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 17:20:10 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:20:11.558 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/soa/service/{scode}.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public void com.mvc.controller.ServiceInterfaceController.service(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-02-10 17:20:11.560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/netty.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String com.mvc.controller.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2017-02-10 17:20:11.580 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 17:20:11.581 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 17:20:11.596 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 15 ms
+2017-02-10 17:20:12.098 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xa76734b7]'
+2017-02-10 17:20:12.114 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xa76734b7] REGISTERED
+2017-02-10 17:20:12.116 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xa76734b7] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 17:20:12.118 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xa76734b7, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
+2017-02-10 17:20:12.324 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xa76734b7, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0xf9a9f7a6, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:58307]
+2017-02-10 17:20:12.368 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xa76734b7, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0x635799ce, L:/127.0.0.1:8082 - R:/127.0.0.1:58311]
+2017-02-10 17:21:12.320 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xa76734b7, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0xea27599b, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:58375]
+2017-02-10 17:21:12.635 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xa76734b7, L:/0:0:0:0:0:0:0:0:8082] RECEIVED: [id: 0xe550c1ff, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:58376]
+2017-02-10 17:34:18.403 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Feb 10 17:34:18 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:34:18.527 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class com.mvc.springconfig.AppConfig]
+2017-02-10 17:34:18.658 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/C:/JavaDev/workspace/vdf-maven-17120/s-nio/target/classes/applicationContext.xml]
+2017-02-10 17:34:19.134 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Feb 10 17:34:18 GMT+08:00 2017]; root of context hierarchy
+2017-02-10 17:34:19.191 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/soa/service/{scode}.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public void com.mvc.controller.ServiceInterfaceController.service(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-02-10 17:34:19.193 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/netty.htm],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String com.mvc.controller.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2017-02-10 17:34:19.243 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2017-02-10 17:34:19.243 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2017-02-10 17:34:19.259 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 15 ms
+2017-02-10 17:34:19.756 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x75a07706]'
+2017-02-10 17:34:19.773 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x75a07706] REGISTERED
+2017-02-10 17:34:19.775 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x75a07706] BIND: 0.0.0.0/0.0.0.0:8082
+2017-02-10 17:34:19.777 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x75a07706, L:/0:0:0:0:0:0:0:0:8082] ACTIVE
