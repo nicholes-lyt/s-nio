@@ -6,6 +6,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
+import io.netty.handler.ssl.SslContext;
 import io.netty.handler.stream.ChunkedWriteHandler;
 
 import javax.servlet.ServletException;
@@ -16,6 +17,8 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.servlet.DispatcherServlet;
 
 import com.mvc.springconfig.AppConfig;
+
+
 
 /**
  * 
@@ -29,6 +32,12 @@ public class ServletChannelInitializer extends
 		ChannelInitializer<SocketChannel> {
 
 	private final DispatcherServlet dispatcherServlet;
+	
+	//SSL认证
+	private SslContext sslContext;
+	
+
+
 
 	/**
 	 * 获取spring配置文件信息
@@ -37,7 +46,9 @@ public class ServletChannelInitializer extends
 	 * @version 1.0
 	 * @date 2017年2月10日 下午4:12:31
 	 */
-	public ServletChannelInitializer() throws ServletException {
+	public ServletChannelInitializer(SslContext sslContext) throws ServletException {
+		
+		this.sslContext = sslContext;
 
 		MockServletContext servletContext = new MockServletContext();
 		MockServletConfig servletConfig = new MockServletConfig(servletContext);
@@ -66,6 +77,10 @@ public class ServletChannelInitializer extends
 //		 SecureChatSslContextFactory.getServerContext().createSSLEngine();
 //		 engine.setUseClientMode(false);
 		//p.addLast("ssl", new SslHandler(engine));
+		//ssl判断
+		if(sslContext != null){
+			p.addLast(sslContext.newHandler(ch.alloc()));
+		}
 		p.addLast(new HttpServerCodec());
 		p.addLast(new HttpObjectAggregator(2048));// HTTP 消息的合并处理
 		// 用netty自带包解决粘包，拆包

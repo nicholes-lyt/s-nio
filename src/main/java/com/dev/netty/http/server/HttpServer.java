@@ -50,8 +50,9 @@ public class HttpServer {
 		workerGroup = new NioEventLoopGroup();
 	}
 
+	
 	public void start()throws Exception{
-		SslContext sslContext;
+		SslContext sslContext = null;
 		logger.info("SSL证书："+System.getProperty("ssl")); 
 		if(SSL){
 			SelfSignedCertificate ssc = new SelfSignedCertificate();
@@ -68,7 +69,7 @@ public class HttpServer {
 			.handler(new LoggingHandler(LogLevel.INFO))//跟踪日志
 			.option(ChannelOption.SO_BACKLOG, 1024)
 			.option(ChannelOption.SO_KEEPALIVE, true)//设置长连接
-			.childHandler(new ServletChannelInitializer());
+			.childHandler(new ServletChannelInitializer(sslContext));
 			//绑定端口
 			ChannelFuture f = b.bind(PORT).sync();
 			logger.info("HttpServer name is "+HttpServer.class.getName() + " started and listen on " + f.channel().localAddress());
