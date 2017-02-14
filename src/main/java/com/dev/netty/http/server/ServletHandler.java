@@ -137,7 +137,7 @@ public class ServletHandler extends SimpleChannelInboundHandler<FullHttpRequest>
 		//http请求和响应
 		MockHttpServletRequest servletRequest = createServletRequest(fullHttpRequest);
 		MockHttpServletResponse servletResponse = new MockHttpServletResponse();
-		
+		logger.info("request请求参数: "+servletRequest.getQueryString());
 		this.servlet.service(servletRequest, servletResponse);
 		HttpResponseStatus status = HttpResponseStatus.valueOf(servletResponse.getStatus());
 		HttpResponse response = new DefaultHttpResponse(HTTP_1_1, status);

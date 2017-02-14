@@ -27,7 +27,7 @@ public class ServiceInterfaceController {
 	 * @return void
 	 */
 	@SuppressWarnings("deprecation")
-	@RequestMapping(value="/soa/service/{scode}.htm",produces = "text/html; charset=utf-8")
+	@RequestMapping(value="/soa/service/{scode}.htm",produces = "text/html; charset=UTF-8")
 	public void service(@PathVariable String scode,HttpServletRequest req,HttpServletResponse resp) throws Exception{
 		resp.setHeader(CONTENT_TYPE, "text/json;charset=UTF-8");
 		JSONObject json = new JSONObject();
