@@ -1,5 +1,4 @@
 package com.dev.netty.http.server;
-
 import static io.netty.handler.codec.http.HttpHeaders.Names.CONTENT_TYPE;
 import static io.netty.handler.codec.http.HttpResponseStatus.BAD_REQUEST;
 import static io.netty.handler.codec.http.HttpResponseStatus.INTERNAL_SERVER_ERROR;
@@ -127,6 +126,7 @@ public class ServletHandler extends SimpleChannelInboundHandler<FullHttpRequest>
 	
 	
 	
+	@SuppressWarnings("deprecation")
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest fullHttpRequest)
 			throws Exception {
@@ -152,6 +152,11 @@ public class ServletHandler extends SimpleChannelInboundHandler<FullHttpRequest>
 				response.headers().add(name, value);
 			}
 		}
+		//启动访问显示
+		if(uri.length() == 1){
+			String result = "Welcome to Netty-HttpServer";
+			servletResponse.getWriter().write(result);
+		}
 		ctx.writeAndFlush(response);
 		InputStream contentStream = new ByteArrayInputStream(servletResponse.getContentAsByteArray());
 		ChannelFuture writeFuture = ctx.writeAndFlush(new ChunkedStream(contentStream));
@@ -166,6 +171,7 @@ public class ServletHandler extends SimpleChannelInboundHandler<FullHttpRequest>
 		}
 	}
 	
+	@SuppressWarnings("deprecation")
 	private static void sendError(ChannelHandlerContext ctx, HttpResponseStatus status) {
 		ByteBuf content = Unpooled.copiedBuffer(
 				"Failure: " + status.toString() + "\r\n",
