@@ -137,7 +137,13 @@ public class ServletHandler extends SimpleChannelInboundHandler<FullHttpRequest>
 		//http请求和响应
 		MockHttpServletRequest servletRequest = createServletRequest(fullHttpRequest);
 		MockHttpServletResponse servletResponse = new MockHttpServletResponse();
+		String uri = servletRequest.getRequestURI();
+		logger.info("requersURI:"+uri);
 		logger.info("request请求参数: "+servletRequest.getQueryString());
+		//去除浏览器"/favicon.ico"的干扰
+		if(uri.equals("/favicon.ico")){
+			return;
+		}
 		this.servlet.service(servletRequest, servletResponse);
 		HttpResponseStatus status = HttpResponseStatus.valueOf(servletResponse.getStatus());
 		HttpResponse response = new DefaultHttpResponse(HTTP_1_1, status);
