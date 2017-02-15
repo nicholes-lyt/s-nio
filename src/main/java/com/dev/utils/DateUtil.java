@@ -461,7 +461,7 @@ public class DateUtil {
 	* @throws
 	 */
 	public static Map<String, Object> getDateFormat(Date date){
-		Map<String, Object> map = new HashMap<>();
+		Map<String, Object> map = new HashMap<String, Object>();
 		try {
 			if(date != null){
 				Calendar cal = Calendar.getInstance();

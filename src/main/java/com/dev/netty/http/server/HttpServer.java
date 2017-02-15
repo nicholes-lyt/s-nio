@@ -16,6 +16,8 @@ import java.net.InetSocketAddress;
 
 import org.apache.log4j.Logger;
 
+import com.dev.utils.PropertiesUtil;
+
 /**
  * 
  * @ClassName: HttpServerHandler   
@@ -32,9 +34,15 @@ public class HttpServer {
 	private EventLoopGroup bossGroup = null;
 	private EventLoopGroup workerGroup = null;
 	
+	
 	//是否使用https协议
 	private static final boolean SSL = System.getProperty("ssl") != null;
-	private static final int PORT = Integer.parseInt(System.getProperty("port", SSL ? "8443" : "8082"));
+	private static int PORT;
+	private static String PROFILE = "nettyserver.properties";
+	private static String SSLPORT_KEY = "netty.httpserver.ssl.port";
+	private static String HTTPPORT_KEY = "netty.httpserver.port";
+	private static String BACKLOG_KEY = "netty.sobacklog";
+	private static String KEEPALIVE_KEY = "netty.sokeepalive";
 	
 	/**
 	 * 
@@ -48,6 +56,9 @@ public class HttpServer {
 		//Nio 线程组
 		bossGroup = new NioEventLoopGroup();
 		workerGroup = new NioEventLoopGroup();
+		String sslPort = PropertiesUtil.getValue(SSLPORT_KEY, PROFILE);
+		String httpPort = PropertiesUtil.getValue(HTTPPORT_KEY, PROFILE);
+		PORT = Integer.parseInt(System.getProperty("port", SSL ? sslPort : httpPort));
 	}
 
 	
@@ -61,14 +72,17 @@ public class HttpServer {
 			sslContext = null;
 		}
 		initEventLoopGroup();
+		//获取配置属性值
+		int sobacklog = Integer.parseInt(PropertiesUtil.getValue(BACKLOG_KEY, PROFILE));
+		boolean sokeepalive = Boolean.valueOf(PropertiesUtil.getValue(KEEPALIVE_KEY, PROFILE));
 		try {
 			ServerBootstrap b = new ServerBootstrap();
 			b.group(bossGroup, workerGroup)
 			.channel(NioServerSocketChannel.class)
 			.localAddress(new InetSocketAddress(PORT))
 			.handler(new LoggingHandler(LogLevel.INFO))//跟踪日志
-			.option(ChannelOption.SO_BACKLOG, 1024)
-			.option(ChannelOption.SO_KEEPALIVE, true)//设置长连接
+			.option(ChannelOption.SO_BACKLOG, sobacklog)
+			.option(ChannelOption.SO_KEEPALIVE, sokeepalive)//设置长连接
 			.childHandler(new ServletChannelInitializer(sslContext));
 			//绑定端口
 			ChannelFuture f = b.bind(PORT).sync();
