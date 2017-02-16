@@ -1,7 +1,5 @@
 package com.mvc.controller;
 
-import static io.netty.handler.codec.http.HttpHeaders.Names.CONTENT_TYPE;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -26,10 +24,9 @@ public class ServiceInterfaceController {
 	 * @throws Exception 
 	 * @return void
 	 */
-	@SuppressWarnings("deprecation")
 	@RequestMapping(value="/soa/service/{scode}.htm",produces = "text/html; charset=UTF-8")
 	public void service(@PathVariable String scode,HttpServletRequest req,HttpServletResponse resp) throws Exception{
-		resp.setHeader(CONTENT_TYPE, "text/json;charset=UTF-8");
+		//resp.setHeader(CONTENT_TYPE, "text/json;charset=UTF-8");
 		JSONObject json = new JSONObject();
 		json.put("data", "编号【"+scode+"】接口访问成功！");
 		resp.getWriter().write(json.toString());
