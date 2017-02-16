@@ -13,9 +13,21 @@ import org.apache.log4j.Logger;
  * @version 1.0 
  * @date 2017年2月15日 上午11:37:31
  */
-public class PropertiesUtil {
+public class NettyPropertiesUtil {
 	
-	private static final Logger logger = Logger.getLogger(PropertiesUtil.class);
+	private static final Logger logger = Logger.getLogger(NettyPropertiesUtil.class);
+	// netty配置文件
+	public static final String PROFILE = "nettyserver.properties";
+	// ssl认证端口
+	public static final String SSLPORT_KEY = "netty.httpserver.ssl.port";
+	// http端口
+	public static final String HTTPPORT_KEY = "netty.httpserver.port";
+	// 已完成三次握手的请求的队列的最大长度
+	public static String BACKLOG_KEY = "netty.sobacklog";
+	// 长连接
+	public static final String KEEPALIVE_KEY = "netty.sokeepalive";
+	// spring 配置文件
+	public static final String SPRINGCONFIG_KEY = "spring.config.file";
 	
 	public static String getValue(String key,String proFile){
 		String value = "";
