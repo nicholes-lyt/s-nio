@@ -13,10 +13,9 @@ import javax.servlet.ServletException;
 
 import org.springframework.mock.web.MockServletConfig;
 import org.springframework.mock.web.MockServletContext;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
-import com.mvc.springconfig.AppConfig;
+import com.dev.utils.NettyPropertiesUtil;
 
 
 
@@ -53,19 +52,19 @@ public class ServletChannelInitializer extends
 		MockServletContext servletContext = new MockServletContext();
 		MockServletConfig servletConfig = new MockServletConfig(servletContext);
 
-		AnnotationConfigWebApplicationContext wac = new AnnotationConfigWebApplicationContext();
+		/*AnnotationConfigWebApplicationContext wac = new AnnotationConfigWebApplicationContext();
 		wac.setServletContext(servletContext);
 		wac.setServletConfig(servletConfig);
 		wac.register(AppConfig.class);
 		wac.refresh();
 
 		this.dispatcherServlet = new DispatcherServlet(wac);
-		this.dispatcherServlet.init(servletConfig);
+		this.dispatcherServlet.init(servletConfig);*/
 
 		// set spring config in xml
-		// this.dispatcherServlet = new DispatcherServlet();
-		// this.dispatcherServlet.setContextConfigLocation("classpath*:/applicationContext.xml");
-		// this.dispatcherServlet.init(servletConfig);
+		this.dispatcherServlet = new DispatcherServlet();
+		this.dispatcherServlet.setContextConfigLocation("classpath*:/"+NettyPropertiesUtil.getValue(NettyPropertiesUtil.SPRINGCONFIG_KEY, NettyPropertiesUtil.PROFILE));
+		this.dispatcherServlet.init(servletConfig);
 	}
 
 	@Override

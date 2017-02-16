@@ -144,19 +144,24 @@ public class ServletHandler extends SimpleChannelInboundHandler<FullHttpRequest>
 		if(uri.equals("/favicon.ico")){
 			return;
 		}
+		//启动访问显示
+		if(uri.length() == 1){
+			String result = "欢迎访问Netty-HttpServer服务器";
+			servletResponse.setCharacterEncoding("UTF-8");
+			servletResponse.getWriter().write(result);
+		}
+		servletResponse.addHeader(CONTENT_TYPE, "text/json;charset=UTF-8");
 		this.servlet.service(servletRequest, servletResponse);
 		HttpResponseStatus status = HttpResponseStatus.valueOf(servletResponse.getStatus());
 		HttpResponse response = new DefaultHttpResponse(HTTP_1_1, status);
+
 		for (String name : servletResponse.getHeaderNames()) {
 			for (Object value : servletResponse.getHeaderValues(name)) {
+				logger.info(" name:"+name+" value:"+value);
 				response.headers().add(name, value);
 			}
 		}
-		//启动访问显示
-		if(uri.length() == 1){
-			String result = "Welcome to Netty-HttpServer";
-			servletResponse.getWriter().write(result);
-		}
+
 		ctx.writeAndFlush(response);
 		InputStream contentStream = new ByteArrayInputStream(servletResponse.getContentAsByteArray());
 		ChannelFuture writeFuture = ctx.writeAndFlush(new ChunkedStream(contentStream));
