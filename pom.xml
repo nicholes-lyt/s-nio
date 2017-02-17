@@ -17,7 +17,7 @@
 		<commons_beanutils_version>1.9.2</commons_beanutils_version>
 		<fastjson_version>1.2.6</fastjson_version>
 		<geronimo.specs-version>1.0</geronimo.specs-version>
-		<org.springframework-version>4.1.1.RELEASE</org.springframework-version>
+		<org.springframework-version>3.2.16.RELEASE</org.springframework-version>
 		<!-- Test libs -->
 		<junit_version>4.10</junit_version>
 		<!-- Log libs -->
