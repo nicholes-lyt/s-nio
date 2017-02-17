@@ -14,7 +14,6 @@ public class TestController {
 
     @RequestMapping(value="/netty.htm")
     public void getShopInJSON(HttpServletRequest request,HttpServletResponse resp) {
-    	resp.setCharacterEncoding("UTF-8");
         try {
 			resp.getWriter().write("访问netty-httpServer服务器！");
 		} catch (IOException e) {
