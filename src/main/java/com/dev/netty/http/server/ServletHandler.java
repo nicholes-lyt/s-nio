@@ -140,6 +140,9 @@ public class ServletHandler extends SimpleChannelInboundHandler<FullHttpRequest>
 		String uri = servletRequest.getRequestURI();
 		logger.info("requersURI:"+uri);
 		logger.info("request请求参数: "+servletRequest.getQueryString());
+		//编码处理
+		servletResponse.setCharacterEncoding("UTF-8");
+		servletResponse.addHeader(CONTENT_TYPE, "text/json;charset=UTF-8");
 		//去除浏览器"/favicon.ico"的干扰
 		if(uri.equals("/favicon.ico")){
 			return;
@@ -147,10 +150,8 @@ public class ServletHandler extends SimpleChannelInboundHandler<FullHttpRequest>
 		//启动访问显示
 		if(uri.length() == 1){
 			String result = "欢迎访问Netty-HttpServer服务器";
-			servletResponse.setCharacterEncoding("UTF-8");
 			servletResponse.getWriter().write(result);
 		}
-		servletResponse.addHeader(CONTENT_TYPE, "text/json;charset=UTF-8");
 		this.servlet.service(servletRequest, servletResponse);
 		HttpResponseStatus status = HttpResponseStatus.valueOf(servletResponse.getStatus());
 		HttpResponse response = new DefaultHttpResponse(HTTP_1_1, status);
