@@ -63,7 +63,7 @@ public class ServletChannelInitializer extends
 
 		// set spring config in xml
 		this.dispatcherServlet = new DispatcherServlet();
-		this.dispatcherServlet.setContextConfigLocation("classpath*:/"+NettyPropertiesUtil.getValue(NettyPropertiesUtil.SPRINGCONFIG_KEY, NettyPropertiesUtil.PROFILE));
+		this.dispatcherServlet.setContextConfigLocation("classpath*:/"+NettyPropertiesUtil.getSpringConfig());
 		this.dispatcherServlet.init(servletConfig);
 	}
 
