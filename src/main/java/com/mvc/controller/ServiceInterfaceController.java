@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.alibaba.fastjson.JSONObject;
 
@@ -24,7 +25,7 @@ public class ServiceInterfaceController {
 	 * @throws Exception 
 	 * @return void
 	 */
-	@RequestMapping(value="/soa/service/{scode}.htm",produces = "text/html; charset=UTF-8")
+	@RequestMapping(method=RequestMethod.POST,value="/soa/service/{scode}.htm",produces = "text/html; charset=UTF-8")
 	public void service(@PathVariable String scode,HttpServletRequest req,HttpServletResponse resp) throws Exception{
 		//resp.setHeader(CONTENT_TYPE, "text/json;charset=UTF-8");
 		JSONObject json = new JSONObject();
